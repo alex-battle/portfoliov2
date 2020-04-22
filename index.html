@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="height=device-height, initial-scale=1">
+  <script src="https://kit.fontawesome.com/c7caeb49e9.js"></script>
+  <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Russo+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./styles/index.min.css">
+  
+
+  <title>Alexander Battle - Web Developer</title>
+</head>
+
+<body>
+  <nav id="large-screen">
+    <div>
+      <i class="fas fa-chevron-up chevron" id="up" onclick="page(-1)"></i>
+      <a onclick="page(0, 0)" id="home-a">
+        <i class="fas fa-home" id="home-i"></i>
+      </a>
+      <a onclick="page(0, 1)" id="about-a">
+        <i class="fas fa-user" id="about-i"></i>
+      </a>
+      <a onclick="page(0, 2)" id="projects-a">
+        <i class="fas fa-pencil-ruler" id="projects-i"></i>
+      </a>
+      <a onclick="page(0, 3)" id="skills-a">
+        <i class="fas fa-star" id="skills-i"></i>
+      </a>
+      <a onclick="page(0, 4)" id="soft-skills-a">
+        <i class="fas fa-medal" id="soft-skills-i"></i>
+      </a>
+      <a onclick="page(0, 5)" id="social-media-a">
+        <i class="fas fa-camera" id="social-media-i"></i>
+      </a>
+      <i class="fas fa-chevron-down chevron" id="down" onclick="page(+1)"></i>
+    </div>
+  </nav>
+  <nav id="small-screen">
+    <div class="opacity"></div>
+    <div id="dropdown">
+      <button type="button">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div id="dropdown-content">
+        <a onclick="page2(0)" id="home-a">
+          <div class="background"></div>
+          <i class="fas fa-home" id="home-i"></i>
+          <p>Home</p>
+        </a>
+        <a onclick="page2(1)" id="about-a">
+          <div class="background"></div>
+          <i class="fas fa-user" id="about-i"></i>
+          <p>About</p>
+        </a>
+        <a onclick="page2(2)" id="projects-a">
+          <div class="background"></div>
+          <i class="fas fa-pencil-ruler" id="projects-i"></i>
+          <p>Projects</p>
+        </a>
+        <a onclick="page2(3)" id="skills-a">
+          <div class="background"></div>
+          <i class="fas fa-star" id="skills-i"></i>
+          <p>Tech Skills</p>
+        </a>
+        <a onclick="page2(4)" id="soft-skills-a">
+          <div class="background"></div>
+          <i class="fas fa-medal" id="soft-skills-i"></i>
+          <p>Soft Skills</p>
+        </a>
+        <a onclick="page2(5)" id="social-media-a">
+          <div class="background"></div>
+          <i class="fas fa-camera" id="social-media-i"></i>
+          <p>Social Media</p>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <section id="home">
+    <img src="./images/home.jpg" alt="Computer Background">
+    <div>
+      <h1 id="top">Alexander</h1>
+      <h1 id="bottom">Battle</h1>
+      <h3>Fullstack Web Developer</h3>
+      <a href="#social-media" rel="internal">Contact Me!</a>
+    </div>
+  </section>
+  <section id="about">
+    <div id="green-nav"></div>
+    <img src="./images/Alex.jpg" alt="Portrait image">
+    <div id="text">
+      <h1>About me</h1>
+      <p>A full stack web developer with a passion for learning new technologies and the continual improvement of myself
+        and those around me.</p>
+
+      <p>I am a motivated young professional with an aptitude for innovation and creative problem-solving. I bring
+        strong skills in critical analysis, teamwork and project management that help companies create an environment
+        that focuses on productivity and positivity.</p>
+
+      <p>With my history as a real estate agent, I bring an unmatched drive and persistence with me as a self-starter as
+        well as an equal ability to add value as a team member whether it be a large or small role. I am always looking
+        for opportunities to leverage my unique set of experiences, I relish the chance to put them to use in new ways.
+      </p>
+    </div>
+  </section>
+  <section id="projects">
+    <div id="green-nav"></div>
+    <h1>Projects</h1>
+    <div id="grid">
+      <a href="" target="_blank">
+        <img src="./images/Estate.ly.jpg" alt="Project design">
+      </a>
+      <a href="http://budget-boyz.herokuapp.com" target="_blank">
+        <img src="./images/budget.png" alt="Project design">
+      </a>
+      <a href="https://bartap.surge.sh" target="_blank">
+        <img src="./images/bartap.png" alt="Project design">
+      </a>
+      <a href="" target="_blank">
+        <img src="./images/coming soon.png" alt="Coming soon image">
+      </a>
+    </div>
+  </section>
+  <section id="skills">
+    <img src="./images/computer2 compressed.jpg" alt="Computer background">
+    <h1>Technical Skills</h1>
+    <div class="">
+      <i class="devicon-html5-plain-wordmark colored"></i>
+      <i class="devicon-css3-plain-wordmark colored"></i>
+      <i class="devicon-javascript-plain colored"></i>
+      <i class="devicon-ruby-plain-wordmark colored"></i>
+      <i class="devicon-react-original-wordmark colored"></i>
+      <i class="devicon-mysql-plain-wordmark colored"></i>
+    </div>
+  </section>
+  <section id="soft-skills">
+    <h3>Soft Skills</h3>
+    <div class="grid">
+      <div>
+        <h4>Analytical & Strategic</h4>
+        <p>I have an "If there is a problem, I have a solution” attitude. Detail-oriented and creative problem solver.
+          Intellectually curious, enjoy continuously solving problems. An insatiable curiosity for new techniques and a
+          razor-sharp eye for detail Examine, interpret, and articulate technical information to audiences of varying
+          technical levels</p>
+      </div>
+      <div>
+        <h4>Customer-focused</h4>
+        <p>Passionate for client success at all times. Understand the customer's needs, and establish the best solution
+          that solves the customer's challenges. Loves to help others and enjoys building and maintaining client
+          relationships. Assess customer requirements, resolve problems, anticipate future needs, and generally serving
+          as the customer’s voice.</p>
+      </div>
+      <div>
+        <h4>Collaborator</h4>
+        <p>I thrive on collaboration, working side by side with people of all backgrounds and disciplines.   Work
+          closely with designers to take wireframes from conception to implementation. Strong communication skills
+          combined with a commitment and proven ability to succeed within a fast-paced organization. Partner with
+          coworkers and management during the sales process to assist in developing account/opportunity strategies,
+          planning and execution.</p>
+      </div>
+      <div>
+        <h4>Communication</h4>
+        <p>Strong overall interpersonal skills and a proven ability to manage multiple clients at once. Is a good
+          listener and asks appropriate questions in order to better understand the goals and then formulate solutions
+          to ensure success. Ability to build strong internal and external relationships and communicate effectively
+          with peers within the organization. Good interpersonal, presentation, and persuasion.</p>
+      </div>
+      <div>
+        <h4>Results-focused</h4>
+        <p>Constantly curious and looking for ways to improve, increase value and be an essential part of the team Stay
+          on top of industry trends and competitive analysis. Comfortable with a fast-moving environment and can learn
+          quickly.</p>
+      </div>
+      <div>
+        <h4>Self-Starter</h4>
+        <p>Proactive and will use excellent judgment when dealing with issues. passionate about implementing solutions
+          that transform the norm. Can effectively manage time and prioritize multiple responsibilities Detail-oriented
+          with the ability to project manage, set priorities and stay organized when managing multiple client
+          relationships. And an ability to work independently and get things done.</p>
+      </div>
+    </div>
+  </section>
+  <section id="social-media">
+    <img src="./images/computer3 compressed.jpg" alt="Computer background">
+    <h1>Social Media</h1>
+    <div>
+      <a href="https://twitter.com/alexthedatadawg" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/alexander--battle/" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/alex-battle" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:alexnder.battle@gmail.com" target="_blank">
+        <i class="far fa-envelope"></i>
+      </a>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+<script type="text/javascript" src="./scripts/index.js"></script>
+
+</html>
